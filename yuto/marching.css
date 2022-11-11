@@ -1,0 +1,164 @@
+body{
+ margin:0;
+ background-color: black;
+ font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'  
+}
+.top-container-right {
+display: flex;
+margin-bottom: 200px;
+text-align: right;
+}
+.top-container-left {
+display: flex;
+margin-bottom: 200px;
+}
+.mar1, .mar2, .mar3, .mar4, .mar5, .mar6 {
+  padding: 10px;
+  width: 50%;
+}
+.fadein-before{
+    opacity: 0;
+    transform:translateX(-50px);
+    transition:opacity 1s,transform 1s;
+}
+.fadein-after{
+    opacity: 1;
+    transform: translate(0);
+}
+h1 {
+    color: white;
+    font-size: 190px;
+    text-align: center;
+    animation: blink-fast .3s linear infinite;
+    font-family:"Book Antiqua";
+    margin-bottom: 250px;
+}
+@keyframes blink-fast {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+}
+
+
+h3 {
+  position: relative;
+  bottom: 400px;
+  font-size: 130px;
+  text-align: center;
+  margin-bottom: -200px;
+  color: white;
+  font-family:"Book Antiqua";
+}
+#scroll-to-top-btn{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	height: 50px;
+	width: 50px;
+	color: #FFF;
+	font-size: 32px;
+	background-color: #ba5a95;
+	border: none;
+	border-radius: 50%;
+	outline: none;
+	transform: rotate(-90deg);
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+.explanation-left {
+    color: white;
+    position: relative;
+    right:150px;
+    top:100px;
+    font-size: 20px;
+    white-space: nowrap;
+    
+}
+.explanation-right {
+    color: white;
+    position: relative;
+    left:150px;
+    top:100px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    white-space: nowrap;
+    text-align: left;
+}
+footer {
+    margin-top: 30px;
+    background-color:#652a60;
+    font-color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1327px) {
+  h1 {
+    color: white;
+    font-size: 130px;
+    text-align: center;
+    animation: blink-fast .3s linear infinite;
+    font-family:"Book Antiqua";
+    margin-bottom: 250px;
+}
+  .left {
+    padding-left: 10px;
+  position: relative;
+  bottom: 530px;
+  font-size: 100px;
+  text-align: left;
+  margin-bottom: -490px;
+  color: white;
+  font-family:"Book Antiqua";
+}
+.right {
+  position: relative;
+  bottom: 530px;
+  font-size: 100px;
+  text-align: right;
+  margin-bottom: -490px;
+  color: white;
+  font-family:"Book Antiqua";
+}
+.br::after {
+    content: "\A";
+    white-space: pre;
+}
+}
+@media screen and (max-width: 1090px) { 
+ .explanation-left {
+    color: white;
+    position: relative;
+    right:50px;
+    top:100px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    white-space: nowrap;
+    
+}
+.explanation-right {
+    color: white;
+    position: relative;
+    left:50px;
+    top:100px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    white-space: nowrap;
+    text-align: left;
+}
+ .left {
+  position: relative;
+  bottom: 530px;
+  font-size: 100px;
+  text-align: left;
+  margin-bottom: -490px;
+  color: white;
+  font-family:"Book Antiqua";
+}
+
+
+}
